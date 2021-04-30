@@ -7,7 +7,7 @@ public class App_Quit : MonoBehaviour
     // Start is called before the first frame update
    public void Quit()
     {
-        Debug.Log("has quit game");
+        Debug.Log("You have quit the game!");
 
         Application.Quit();
     }
