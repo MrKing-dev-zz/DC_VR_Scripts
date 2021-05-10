@@ -45,7 +45,7 @@ public class DragonAttack : MonoBehaviour
 
     public void WingPlay()
     {
-        if(wingSound.isPlaying == false)
+        if(!wingSound.isPlaying)
         {
             wingSound.Play();
         }
