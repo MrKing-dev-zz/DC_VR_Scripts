@@ -13,11 +13,7 @@ public class ControlFlames : MonoBehaviour
     public float expRadius;
     public float expUP;
     bool explode = false;
-    /*public int hormax;
-    public int hormin;
-    public int vertmax;
-    public int vertmin;
-    */
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -43,14 +39,6 @@ public class ControlFlames : MonoBehaviour
 
     public void FixedUpdate()
     {
-        /*transform.eulerAngles = new Vector3(transform.eulerAngles.x, Random.Range(0, 360), transform.eulerAngles.z);
-        float speed = 600;
-        rb.isKinematic = false;
-        Vector3 force = transform.forward;
-        force = new Vector3(force.x, 1, force.z);
-        rb.AddForce(force * speed);
-        */
-        //rb.AddForce(Random.Range(hormin, hormax), Random.Range(vertmin, vertmax), Random.Range(hormin, hormax), ForceMode.Impulse);
         if (explode)
         {
             rb.AddExplosionForce(expForce, expPos.transform.position, expRadius, expUP, ForceMode.Acceleration);
